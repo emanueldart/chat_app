@@ -5,8 +5,6 @@ import 'package:chat/widgets/logo.dart';
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatelessWidget {
-  const RegisterPage({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -84,7 +82,7 @@ class __FormState extends State<_Form> {
           ),
           BotonAzul(
             text: "Ingresar",
-            presionar: () {
+            onPressed: () {
               print(emailCtrl.text);
             },
           ),
